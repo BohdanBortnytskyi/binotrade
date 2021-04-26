@@ -11,14 +11,7 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 26px;
-  background-color: $origin-white;
+  background-color: $basic-grey-light;
   min-height: 100%;
-
-  h1 {
-    color: $origin-black;
-    text-align: center;
-    font-weight: bold;
-    font-size: 35px;
-    line-height: 38px;
-  }
+  color: $basic-black;
 }
