@@ -1,0 +1,24 @@
+.page {
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+}
+
+.page__body {
+  margin: 0;
+  padding: 0;
+  font-family: $basic-font;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: $origin-white;
+  min-height: 100%;
+
+  h1 {
+    color: $origin-black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 38px;
+  }
+}
