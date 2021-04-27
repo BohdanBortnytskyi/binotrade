@@ -1,0 +1,31 @@
+.main-nav {
+  display: flex;
+  align-items: baseline;
+
+  a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: $origin-white;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.main-nav__item {
+
+  margin-right: 30px;
+}
+
+.page-header__link {
+  margin-left: 30px;
+}

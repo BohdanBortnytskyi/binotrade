@@ -1,0 +1,57 @@
+.page-header {
+  height: 900px;
+  background-image: url(../img/header-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 35px;
+  color: $origin-white;
+}
+
+.page-header__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__link--bordered {
+  border: 1px solid $origin-white;
+  border-radius: 4px;
+  padding: 5px 11px;
+}
+
+.page-header__call-to-action {
+  width: 856px;
+  margin: 0 auto;
+  text-align: center;
+
+  h1 {
+    color: $origin-white;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 70px;
+    letter-spacing: 0.155555px;
+    margin-top: 170px;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.36px;
+  }
+}
+
+.page-header__button {
+  width: 240px;
+  min-height: 53px;
+  border: 0;
+  background: linear-gradient(181.79deg, #00F9FF 1.52%, #00D0F1 122.12%);
+  box-shadow: 0px 8px 14px rgba(0, 107, 206, 0.3);
+  border-radius: 4px;
+  color: $origin-white;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+  margin-top: 30px;
+}

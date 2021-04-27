@@ -1,0 +1,23 @@
+.assets {
+  padding-top: 154px;
+  padding-bottom: 186px;
+  height: 220px;
+  background-color: $origin-white;
+
+  h2 {
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.0888889px;
+    text-align: center;
+  }
+}
+
+.assets__list {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  width: 910px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}

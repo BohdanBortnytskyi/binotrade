@@ -1,0 +1,10 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Qanelas-Regular";
+  src: url("../fonts/Qanelas-Regular.woff2") format("woff2"),
+    url("../fonts/Qanelas-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

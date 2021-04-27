@@ -1,0 +1,22 @@
+.info {
+  padding-top: 212px;
+  padding-bottom: 122px;
+  display: flex;
+  flex-wrap: wrap;
+
+  h2 {
+    width: 100%;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 39px;
+    letter-spacing: 0.0888889px;
+  }
+
+  p {
+    width: 554px;
+  }
+
+  p:nth-of-type(2n) {
+    margin-left: 65px;
+  }
+}
