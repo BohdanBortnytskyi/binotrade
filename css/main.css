@@ -70,6 +70,34 @@ img {
   justify-content: space-between;
 }
 
+.page-header__top-left {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__logo {
+  width: 142px;
+  height: 20px;
+}
+
+.page-header__select {
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  height: 20px;
+  padding: 1px 0 1px 12px;
+  border-left: 1px solid #979797;
+  margin-left: 14px;
+  cursor: pointer;
+}
+.page-header__select option {
+  color: #1e2945;
+}
+
 .page-header__link--bordered {
   border: 1px solid #ffffff;
   border-radius: 4px;
