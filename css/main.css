@@ -61,6 +61,7 @@ img {
   background-image: url(../img/header-bg.svg);
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
   padding-top: 35px;
   color: #ffffff;
 }
@@ -150,9 +151,6 @@ img {
   line-height: 18px;
   color: #ffffff;
 }
-.main-nav a:hover {
-  text-decoration: underline;
-}
 
 .main-nav__list {
   padding: 0;
@@ -163,6 +161,9 @@ img {
 
 .main-nav__item {
   margin-right: 30px;
+}
+.main-nav__item a:hover {
+  text-decoration: underline;
 }
 
 .page-header__link {
@@ -194,6 +195,20 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-position: 85px center;
+}
+.benefits__item--strategy {
+  background-image: url(../img/icon-strategy.svg);
+}
+.benefits__item--profit {
+  background-image: url(../img/icon-profit.svg);
+}
+.benefits__item--direction {
+  background-image: url(../img/icon-direction.svg);
+}
+.benefits__item--withdraw {
+  background-image: url(../img/icon-withdraw.svg);
 }
 .benefits__item h3 {
   font-weight: normal;
@@ -204,9 +219,15 @@ img {
 }
 
 .features {
+  padding-top: 375px;
+  background-image: url(../img/features-bg.svg);
+  background-repeat: no-repeat;
+  background-position: -145px 555px;
+}
+
+.features__wrapper {
   width: 1040px;
   margin: 0 auto;
-  padding-top: 375px;
 }
 
 .features__tabs {
@@ -283,17 +304,23 @@ img {
 }
 
 .mobile-apps {
-  height: 500px;
-  padding-top: 490px;
+  height: 980px;
   background-image: url(../img/mobile-apps-bg.svg);
   background-repeat: no-repeat;
   background-position: center bottom;
   color: #ffffff;
 }
-
-.mobile-apps__wrapper {
+.mobile-apps header {
   padding-left: 90px;
   width: 390px;
+  padding-top: 490px;
+}
+
+.mobile-apps__wrapper {
+  height: 100%;
+  background-image: url(../img/devices.png);
+  background-repeat: no-repeat;
+  background-position: right 100px;
 }
 
 .info {

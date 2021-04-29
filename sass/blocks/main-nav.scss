@@ -8,10 +8,6 @@
     line-height: 18px;
     color: $origin-white;
   }
-
-  a:hover {
-    text-decoration: underline;
-  }
 }
 
 .main-nav__list {
@@ -24,6 +20,10 @@
 .main-nav__item {
 
   margin-right: 30px;
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .page-header__link {

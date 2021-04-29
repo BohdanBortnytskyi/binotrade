@@ -1,7 +1,13 @@
 .features {
+  padding-top: 375px;
+  background-image: url(../img/features-bg.svg);
+  background-repeat: no-repeat;
+  background-position: -145px 555px;
+}
+
+.features__wrapper {
   width: 1040px;
   margin: 0 auto;
-  padding-top: 375px;
 }
 
 .features__tabs {
