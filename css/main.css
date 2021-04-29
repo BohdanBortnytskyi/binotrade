@@ -255,6 +255,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 0 30px;
+  outline: none;
 }
 .features__item--active {
   color: #2e73fe;
@@ -266,6 +267,7 @@ img {
   height: 570px;
   background-repeat: no-repeat;
   background-position: right center;
+  display: none;
 }
 .features__article h3 {
   font-weight: normal;
@@ -278,6 +280,9 @@ img {
 }
 .features__article--deposit {
   background-image: url(../img/deposit.svg);
+}
+.features__article--active {
+  display: block;
 }
 
 .assets {
