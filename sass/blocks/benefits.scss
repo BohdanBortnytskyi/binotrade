@@ -23,6 +23,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-position: 85px center;
+
+  &--strategy {
+    background-image: url(../img/icon-strategy.svg);
+  }
+
+  &--profit {
+    background-image: url(../img/icon-profit.svg);
+  }
+
+  &--direction {
+    background-image: url(../img/icon-direction.svg);
+  }
+
+  &--withdraw {
+    background-image: url(../img/icon-withdraw.svg);
+  }
 
   h3 {
     font-weight: normal;
