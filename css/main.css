@@ -219,9 +219,15 @@ img {
 }
 
 .features {
+  padding-top: 375px;
+  background-image: url(../img/features-bg.svg);
+  background-repeat: no-repeat;
+  background-position: -145px 555px;
+}
+
+.features__wrapper {
   width: 1040px;
   margin: 0 auto;
-  padding-top: 375px;
 }
 
 .features__tabs {
@@ -298,17 +304,23 @@ img {
 }
 
 .mobile-apps {
-  height: 500px;
-  padding-top: 490px;
+  height: 980px;
   background-image: url(../img/mobile-apps-bg.svg);
   background-repeat: no-repeat;
   background-position: center bottom;
   color: #ffffff;
 }
-
-.mobile-apps__wrapper {
+.mobile-apps header {
   padding-left: 90px;
   width: 390px;
+  padding-top: 490px;
+}
+
+.mobile-apps__wrapper {
+  height: 100%;
+  background-image: url(../img/devices.png);
+  background-repeat: no-repeat;
+  background-position: right 100px;
 }
 
 .info {

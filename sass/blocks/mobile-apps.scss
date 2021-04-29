@@ -1,13 +1,20 @@
 .mobile-apps {
-  height: 500px;
-  padding-top: 490px;
+  height: 980px;
   background-image: url(../img/mobile-apps-bg.svg);
   background-repeat: no-repeat;
   background-position: center bottom;
   color: $origin-white;
+
+  header {
+    padding-left: 90px;
+    width: 390px;
+    padding-top: 490px;
+  }
 }
 
 .mobile-apps__wrapper {
-  padding-left: 90px;
-  width: 390px;
+  height: 100%;
+  background-image: url(../img/devices.png);
+  background-repeat: no-repeat;
+  background-position: right 100px;
 }
