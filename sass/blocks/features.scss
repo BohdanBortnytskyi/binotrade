@@ -37,6 +37,10 @@
   padding: 0 30px;
   outline: none;
 
+  &:hover {
+    color: $basic-blue;
+  }
+
   &--active {
     color: $basic-blue;
     border-bottom: 2px solid $basic-blue;

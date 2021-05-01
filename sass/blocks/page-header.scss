@@ -10,12 +10,22 @@
 
 .page-header__top {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .page-header__top-left {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .page-header__logo {
@@ -49,18 +59,28 @@
 }
 
 .page-header__call-to-action {
-  width: 856px;
+  width: 70%;
   margin: 0 auto;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    width: 790px;
+  }
 
   h1 {
     color: $origin-white;
     font-weight: 500;
-    font-size: 70px;
-    line-height: 70px;
+    font-size: 50px;
+    line-height: 50px;
     letter-spacing: 0.155555px;
-    margin-top: 170px;
+    margin-top: 70px;
     margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 70px;
+      line-height: 70px;
+      margin-top: 170px;
+    }
   }
 
   p {

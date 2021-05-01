@@ -1,30 +1,55 @@
 .benefits {
-  width: 1040px;
-  height: 366px;
+  width: 70%;
   margin: 0 auto;
-  margin-top: 223px;
+  margin-top: 80px;
   background-color: $origin-white;
   box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.03);
   border-radius: 6px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 223px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1040px;
+    height: 366px;
+  }
 }
 
 .benefits__list {
-  padding: 0;
+  padding: 20px;
   margin: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(auto-fill, 100%);
+  grid-gap: 40px;
+  grid-auto-rows: auto;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(auto-fill, 45%);
+    grid-gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    grid-template-columns: repeat(auto-fill, 50%);
+    grid-gap: 0;
+  }
 }
 
 .benefits__item {
-  width: 520px;
-  height: 183px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
-  background-position: 85px center;
+  background-position: left center;
+
+  @media (min-width: $desktop-width) {
+    height: 183px;
+    background-position: 85px center;
+  }
 
   &--strategy {
     background-image: url(../img/icon-strategy.svg);
