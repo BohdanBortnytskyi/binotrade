@@ -1,20 +1,24 @@
 .mobile-apps {
-  height: 980px;
+  height: 800px;
   color: $origin-white;
   background-image: url(../img/mobile-apps-bg.svg);
   background-repeat: no-repeat;
   background-position: center bottom;
 
   @media (min-width: $tablet-width) {
+    height: 880px;
+  }
+
+  @media (min-width: $desktop-width) {
     height: 980px;
   }
 
   header {
-    padding-top: 390px;
+    padding-top: 190px;
 
     @media (min-width: $tablet-width) {
+      padding-top: 290px;
       padding-left: 90px;
-      padding-top: 390px;
       width: 390px;
     }
 

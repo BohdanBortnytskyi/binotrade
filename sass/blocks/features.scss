@@ -1,11 +1,18 @@
 .features {
   padding-top: 375px;
+  padding-bottom: 100px;
   background-image: url(../img/features-bg.svg);
   background-repeat: no-repeat;
   background-position: -145px 400px;
 
   @media (min-width: $tablet-width) {
-    background-position: -145px 555px;
+    padding-top: 275px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 375px;
+    background-position: -145px 455px;
   }
 }
 

@@ -1,8 +1,17 @@
 .assets {
-  padding-top: 154px;
-  padding-bottom: 186px;
-  height: 220px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: $origin-white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 154px;
+    padding-bottom: 186px;
+  }
 
   h2 {
     font-weight: normal;
