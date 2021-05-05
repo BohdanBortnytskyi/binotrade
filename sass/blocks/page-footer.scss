@@ -1,10 +1,22 @@
 .page-footer {
   min-height: 130px;
+  background-color: $basic-blue-light;
   background-image: url(../img/footer-bg.svg);
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 154px;
-  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    padding-top: 154px;
+    padding-bottom: 50px;
+  }
 
   h3 {
     font-style: normal;
@@ -19,6 +31,7 @@
 .page-footer__wrapper {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .page-footer__list {
@@ -38,8 +51,29 @@
   }
 }
 
+.page-footer__column {
+  width: 100%;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 30%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
 .page-footer__column:not(:first-child) {
-  margin-left: 90px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 90px;
+  }
 }
 
 .page-footer__social {
@@ -47,6 +81,7 @@
   margin: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 
   li:not(:first-child) {
     margin-left: 8px;
@@ -60,8 +95,12 @@
   color: $basic-grey;
   margin-top: 44px;
   display: flex;
-  justify-content: center;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+    align-items: center;
+  }
 
   p {
     margin-right: 8px;

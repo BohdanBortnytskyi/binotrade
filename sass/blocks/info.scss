@@ -1,8 +1,18 @@
 .info {
-  padding-top: 212px;
+  padding-top: 100px;
   padding-bottom: 122px;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 212px;
+    justify-content: start;
+  }
 
   h2 {
     width: 100%;
@@ -13,10 +23,20 @@
   }
 
   p {
-    width: 554px;
+
+    @media (min-width: $tablet-width) {
+      width: 45%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 554px;
+    }
   }
 
   p:nth-of-type(2n) {
-    margin-left: 65px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 65px;
+    }
   }
 }
