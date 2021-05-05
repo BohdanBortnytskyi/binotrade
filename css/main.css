@@ -391,7 +391,6 @@ img {
 
 .features__article {
   padding-top: 50px;
-  height: 570px;
   background-repeat: no-repeat;
   background-position: right center;
   display: none;
@@ -399,6 +398,7 @@ img {
 @media (min-width: 768px) {
   .features__article {
     padding-top: 200px;
+    height: 570px;
   }
 }
 .features__article h3 {
@@ -439,35 +439,79 @@ img {
   line-height: 50px;
   letter-spacing: 0.0888889px;
   text-align: center;
+  margin-top: 0;
 }
 
 .assets__list {
   padding: 0;
   margin: 0 auto;
   list-style: none;
-  width: 910px;
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: repeat(auto-fill, 50%);
+  grid-auto-rows: auto;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .assets__list {
+    grid-template-columns: repeat(auto-fill, 194px);
+  }
+}
+@media (min-width: 1440px) {
+  .assets__list {
+    width: 1040px;
+    grid-template-columns: repeat(auto-fill, 194px);
+  }
+}
+
+.assets__item {
+  text-align: center;
 }
 
 .mobile-apps {
   height: 980px;
+  color: #ffffff;
   background-image: url(../img/mobile-apps-bg.svg);
   background-repeat: no-repeat;
   background-position: center bottom;
-  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .mobile-apps {
+    height: 980px;
+  }
 }
 .mobile-apps header {
-  padding-left: 90px;
-  width: 390px;
-  padding-top: 490px;
+  padding-top: 390px;
+}
+@media (min-width: 768px) {
+  .mobile-apps header {
+    padding-left: 90px;
+    padding-top: 390px;
+    width: 390px;
+  }
+}
+@media (min-width: 1440px) {
+  .mobile-apps header {
+    padding-top: 490px;
+  }
 }
 
 .mobile-apps__wrapper {
   height: 100%;
   background-image: url(../img/devices.png);
+  background-position: center bottom;
   background-repeat: no-repeat;
-  background-position: right 100px;
+  background-size: 80%;
+}
+@media (min-width: 768px) {
+  .mobile-apps__wrapper {
+    background-size: 50%;
+    background-position: right bottom;
+  }
+}
+@media (min-width: 1440px) {
+  .mobile-apps__wrapper {
+    background-position: right 100px;
+  }
 }
 
 .info {

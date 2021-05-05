@@ -81,13 +81,13 @@
 
 .features__article {
   padding-top: 50px;
-  height: 570px;
   background-repeat: no-repeat;
   background-position: right center;
   display: none;
 
   @media (min-width: $tablet-width) {
     padding-top: 200px;
+    height: 570px;
   }
 
   h3 {

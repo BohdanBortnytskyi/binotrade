@@ -10,6 +10,7 @@
     line-height: 50px;
     letter-spacing: 0.0888889px;
     text-align: center;
+    margin-top: 0;
   }
 }
 
@@ -17,7 +18,21 @@
   padding: 0;
   margin: 0 auto;
   list-style: none;
-  width: 910px;
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: repeat(auto-fill, 50%);
+  grid-auto-rows: auto;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(auto-fill, 194px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1040px;
+    grid-template-columns: repeat(auto-fill, 194px);
+  }
+}
+
+.assets__item {
+  text-align: center;
 }
